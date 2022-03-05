@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 60%;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.slider-container ul li{
+    display: inline;
+    border: 1px solid black;
+    flex: 1;
+    text-align: center;
+}
