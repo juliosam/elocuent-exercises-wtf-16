@@ -50,7 +50,7 @@ console.log(result)
 
 
 
-let nNumber = Number (prompt ("dime un numero del 10 al 100"))
+let nNumber = 50  //Number (prompt ("dime un numero del 10 al 100"))
 
 if (nNumber<10){console.log("ese numero es muy chico")}
 
@@ -72,9 +72,9 @@ else if (theNumber>1000) { console.log("numba 2 big")}
 else {console.log("were ma numba bitch?")}
 
 
-let yourNamo = prompt("escribe tu nombre");
+//let yourNamo = prompt("escribe tu nombre");
 
-    console.log(yourNamo);
+ //   console.log(yourNamo);
 
 
 
@@ -138,3 +138,75 @@ console.log(current);
         break
     }
 }
+
+
+let sugar = function(Base,base,altura) {
+    return ((Base+base)*altura)/2
+}
+
+console.log(sugar(2,1,2));
+
+
+
+
+const potencia = function(numero, expo) {
+    
+    let result=1;
+    for (let cuentas=0; cuentas < expo; cuentas++){
+        result = result*numero;
+
+    }
+    return result
+}
+
+console.log(potencia(3,3))
+
+
+
+const potencias = ( val, exp)=>{
+    let resulto =1;
+    for (let cucu=0; cucu<exp; cucu++){
+        resulto = resulto*val;
+    }
+    return resulto;
+}
+
+console.log(potencias (4,3))
+
+
+
+
+let OdTacos = function (factor){
+    let ingrediente = function (canti,unidad, nombr){
+        let cantiIng = canti*factor; 
+        if(cantiIng>1){
+            unidad=unidad+"s"
+        }
+
+        console.log(`${cantiIng},${unidad},${nombr}`);
+    }
+    ingrediente (5, "piezas", "tortilla") ; 
+    ingrediente (125, "gramos", "carne") ;
+    ingrediente (30, "gramos", "cebolla");
+    ingrediente (1, "cucharadita","cilantro");
+    ingrediente (1, "cucharada", "salsa");
+};
+ 
+console.log(OdTacos(3));
+
+
+function raper(n){
+    let mercu = n
+
+    return mercu
+};
+
+function rock() { return raper(1) };
+
+function pop() {return  raper(2) };
+
+console.log(rock());
+console.log(pop());
+
+
+

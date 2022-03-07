@@ -1,25 +1,31 @@
 body {
     margin: 0;
+    background-image: linear-gradient(to bottom, rgb(0, 35, 46) 20%, rgb(1, 178, 209));
+    height: 100vh;
 }
 
 .image {
     display: flex;
     justify-content: center;
+    
 }
 
 .image img {
     width: 60%;
+    bottom margin: 10px;
 }
 
 .slider-container {
     display: flex;
     justify-content: center;
+    margin-top: 5px;
 }
 
 .slider {
     width: 60%;
     display: flex;
     justify-content: center;
+    background: rgb(0, 0, 46, 40%)
 }
 
 .slider ul{
@@ -30,8 +36,42 @@ body {
 }
 
 .slider-container ul li{
-    display: inline;
-    border: 1px solid black;
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slider-container ul li:hover{background: rgba(58, 58, 58, 0.4) ;}
+}
+
+.brutus {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider ul a {
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 13px;
+font-weight: bolder;
+color: white;
+}
+
+.slider-container ul .arrow {
     flex: 1;
+    padding-bottom: 10px;
+}
+
+.slider ul .arrow a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+
+ul li .brutus a {
     text-align: center;
 }
